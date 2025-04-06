@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//  TO HIDE THE HEADER WHEN SCROLLED
+//  TO HIDE THE HEADER WHEN SCROLLED (DELAY CONTENT LOAD ERROR FIXED)
       window.addEventListener('scroll', function() {
         const header = document.querySelector('.header');
         const scrollPosition = window.scrollY; // Current scroll position
