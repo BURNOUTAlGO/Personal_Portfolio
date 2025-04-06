@@ -143,7 +143,7 @@ html{
 .footer-container{
     position: fixed;
     z-index: 2;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding:28.8px,28.8px,0px;
     display: flex;
@@ -151,7 +151,7 @@ html{
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    background-color: var(--text-color)
+    background-color: var(--text-color);
 }
 .main-container{
     width:95%;
@@ -427,6 +427,7 @@ html{
      
 }
 .content-left{
+    margin-inline: auto;
     z-index: 2;
     max-width:100%;
     background-color: transparent;
@@ -517,17 +518,18 @@ html{
     transition-duration: 255ms;
 }
 .content-right{
+    margin-inline: auto;
     display: flex;
     justify-content: center;
     z-index: 2;
     
 }
 .image-container{
-    /* border:1px solid black; */
-    /* border-radius: 59% 41% 67% 33% / 38% 25% 75% 62% ; */
+    /* border:40px solid var(--glow-color); */
+    border-radius: 59% 41% 67% 33% / 38% 25% 75% 62% ;
     overflow: hidden;
-    height: 50vh;
-    width: 340px;
+    height: 70vh;
+    width: auto;
     background-color:var(--glow-color);
     
     
@@ -600,29 +602,6 @@ html{
     }
 
 }
-/* @media screen and (min-width:1260px){
-    .main-role{
-        font-size: 5.4rem;
-
-    }
-    .main-text{
-        font-size: 5.4rem;
-        
-    }
-
-} */
-/* @media screen and (max-width:317px){
-    .main-text{
-        font-size: 2rem;
-    }
-    .main-role{
-        font-size: 2rem;
-    }
-    .main-p{
-        font-size: 1rem;
-    }
-
-} */
 
 
 
@@ -911,11 +890,11 @@ html{
 .video-section{
     width: 100%;
     margin-inline: auto;
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0.7rem;
-    gap: 5rem;
+    gap: 2rem;
+
 
 }
 
@@ -935,10 +914,7 @@ html{
     height: 100%;
 }
 
-@media screen and (max-width:938px){
 
-    
-}
 @media screen and (max-width:636px){
 
     .head2{
@@ -946,11 +922,16 @@ html{
     }
     
 }
-@media screen and (max-width:352px){
+@media screen and (max-width:969px){
 
+  .video-section{
+    flex-direction: column;
+
+  }
     
 }
-/* for transition of each content while scrolling  */
+
+
 
 
 

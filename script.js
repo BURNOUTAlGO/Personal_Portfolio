@@ -67,7 +67,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
+      // TO ENABLE THE FOOTER-CONTAINER AFTER 60% SCROLL
 
+      const myDiv1 = document.getElementById("footer-container");
+
+        // Function to check scroll position
+        window.addEventListener('scroll', function() {
+            const scrollPercentage = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+
+            // Show the div when 60% of the page is scrolled
+            if (scrollPercentage >= 0.6) {
+                myDiv1.style.display = "block"; // Show div
+            } else {
+                myDiv1.style.display = "none"; // Hide div
+            }
+        });
     
 
 });
